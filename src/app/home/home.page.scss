@@ -25,3 +25,7 @@
 #container a {
   text-decoration: none;
 }
+ion-content {
+  /* O 'background' ou 'linear-gradient' deve ir direto na variável --background */
+  --background: linear-gradient(to bottom, #7B47E7 0%, #A27CFA 20%, #E6D9FF 50%)
+}

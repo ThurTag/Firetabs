@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../node_modules/@ionic/core/dist/esm/config-DWCzVL3Y.js"],
+  "sourcesContent": ["/*!\r\n * (C) Ionic http://ionicframework.com - MIT License\r\n */\r\nconst setupConfig = (config) => {\r\n    const win = window;\r\n    const Ionic = win.Ionic;\r\n    if (Ionic && Ionic.config && Ionic.config.constructor.name !== 'Object') {\r\n        return;\r\n    }\r\n    win.Ionic = win.Ionic || {};\r\n    win.Ionic.config = {\r\n        ...win.Ionic.config,\r\n        ...config,\r\n    };\r\n    return win.Ionic.config;\r\n};\r\nconst getMode = () => {\r\n    const win = window;\r\n    const config = win?.Ionic?.config;\r\n    if (config) {\r\n        if (config.mode) {\r\n            return config.mode;\r\n        }\r\n        else {\r\n            return config.get('mode');\r\n        }\r\n    }\r\n    return 'md';\r\n};\r\nconst ENABLE_HTML_CONTENT_DEFAULT = false;\r\n\r\nexport { ENABLE_HTML_CONTENT_DEFAULT as E, getMode as g, setupConfig as s };\r\n"],
+  "mappings": ";;;;;AAGA,IAAM,cAAc,CAAC,WAAW;AAC5B,QAAM,MAAM;AACZ,QAAM,QAAQ,IAAI;AAClB,MAAI,SAAS,MAAM,UAAU,MAAM,OAAO,YAAY,SAAS,UAAU;AACrE;AAAA,EACJ;AACA,MAAI,QAAQ,IAAI,SAAS,CAAC;AAC1B,MAAI,MAAM,SAAS,kCACZ,IAAI,MAAM,SACV;AAEP,SAAO,IAAI,MAAM;AACrB;AAcA,IAAM,8BAA8B;",
+  "names": []
+}

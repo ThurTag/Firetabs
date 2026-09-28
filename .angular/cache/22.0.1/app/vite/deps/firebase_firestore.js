@@ -21,7 +21,7 @@ import {
   isSafariOrWebkit,
   pingServer,
   registerVersion
-} from "./chunk-HCHMPK7F.js";
+} from "./chunk-O6RPFHQI.js";
 import {
   __objRest,
   __spreadProps,

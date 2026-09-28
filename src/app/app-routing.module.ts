@@ -28,7 +28,16 @@ const routes: Routes = [
     path: '',
     redirectTo: 'tabs/home',
     pathMatch: 'full'
+  },
+  {
+    path: 'tab4',
+    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },
+  {
+    path: 'tab5',
+    loadChildren: () => import('./tab5/tab5.module').then( m => m.Tab5PageModule)
   }
+
 ];
 
 @NgModule({
