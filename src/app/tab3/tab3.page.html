@@ -1,4 +1,45 @@
+<ion-content class="pagina">
+  <div class="topo-grad">
+    <div class="topo-linha">
+      <h2>Looks e Peças</h2>
+      <button class="btn-topo">Histórico</button>
+    </div>
+    <input class="busca" placeholder="Buscar peças ou looks..." />
+  </div>
 
-<ion-content class="ion-padding">
-  
+  <div class="corpo-pag">
+    <div class="chips">
+      <button
+        class="chip"
+        *ngFor="let f of filtros"
+        [class.ativo]="f === filtro"
+        (click)="filtro = f"
+      >
+        {{ f }}
+      </button>
+    </div>
+
+    <p class="titulo-sec">Suas peças</p>
+    <div class="grade">
+      <div class="peca" *ngFor="let p of pecasFiltradas()">
+        <img [src]="img(p.img, 300, 300)" [alt]="p.nome" />
+        <span>{{ p.nome }}</span>
+      </div>
+    </div>
+
+    <p class="titulo-sec">Looks montados</p>
+    <div class="look" *ngFor="let l of looks">
+      <img [src]="img(l.img, 800, 300)" [alt]="l.nome" />
+      <div class="look-grad"></div>
+      <div class="look-txt">
+        <span class="tag-ia" *ngIf="l.ia">IA</span>
+        <strong>{{ l.nome }}</strong>
+        <small>{{ l.estilo }} · {{ l.ocasiao }}</small>
+      </div>
+    </div>
+
+    <button class="btn-roxo" (click)="gerar()">
+      ✨ Gerar novo look com IA
+    </button>
+  </div>
 </ion-content>

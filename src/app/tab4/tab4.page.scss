@@ -1,5 +1,26 @@
-ion-content {
-  /* O 'background' ou 'linear-gradient' deve ir direto na variável --background */
-  --background: linear-gradient(to bottom, #7B47E7 0%, #A27CFA 20%, #E6D9FF 50%)
+.busca {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+  }
 }
-
+.mosaico {
+  columns: 2;
+  column-gap: 12px;
+  img {
+    width: 100%;
+    display: block;
+    margin-bottom: 12px;
+    border-radius: 16px;
+    border: 1px solid #ddd6fe;
+    break-inside: avoid;
+  }
+}
