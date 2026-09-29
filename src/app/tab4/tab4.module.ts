@@ -1,23 +1,19 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
+import { IonContent, IonIcon } from "@ionic/angular";
 
-import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular';
-
-import { Tab4Page } from './tab4.page';
-import { Tab4PageRoutingModule } from './tab4-routing.module';
+import { Tab4Page } from "./tab4.page";
+import { Tab4PageRoutingModule } from "./tab4-routing.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     Tab4PageRoutingModule,
-
-    IonHeader,
-    IonToolbar,
-    IonTitle,
-    IonContent
+    IonContent,
+    IonIcon,
   ],
-  declarations: [Tab4Page]
+  declarations: [Tab4Page],
 })
 export class Tab4PageModule {}

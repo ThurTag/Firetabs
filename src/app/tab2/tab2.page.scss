@@ -1,29 +1,68 @@
-#container {
-  text-align: center;
-
+.pasta {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #ddd6fe;
+  margin-bottom: 14px;
+  background: #fff;
+}
+.pasta-img {
+  position: relative;
+  height: 140px;
+  background-size: cover;
+  background-position: center;
+  background-color: #7c3aed;
+}
+.pasta-grad {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(76, 29, 149, 0.15),
+    rgba(30, 27, 46, 0.8)
+  );
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.fav {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #f59e0b;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.pasta-txt {
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  right: 12px;
+  strong {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+  }
+  small {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 10px;
+  }
 }
-
-ion-content {
-  /* O 'background' ou 'linear-gradient' deve ir direto na variável --background */
-  --background: linear-gradient(to bottom, #7B47E7 0%, #A27CFA 20%, #E6D9FF 50%)
+.pasta-rod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
 }
-
+.tag {
+  font-size: 10px;
+  background: #ede9fe;
+  color: #7c3aed;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-right: 4px;
+}
+.cont {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b6480;
+}

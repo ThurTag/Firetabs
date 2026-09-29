@@ -1,4 +1,29 @@
+<ion-content class="pagina">
+  <div class="topo-grad">
+    <div class="topo-linha">
+      <h2>Explore</h2>
+      <button class="btn-topo">via Pexels</button>
+    </div>
+    <input class="busca" placeholder="Buscar inspirações..." />
+  </div>
 
-<ion-content class="ion-padding">
-  
+  <div class="corpo-pag">
+    <div class="chips">
+      <button
+        class="chip"
+        *ngFor="let f of filtros"
+        [class.ativo]="f === filtro"
+        (click)="filtro = f"
+      >
+        {{ f }}
+      </button>
+    </div>
+    <div class="mosaico">
+      <img
+        *ngFor="let id of imagens; let i = index"
+        [src]="img(id, 400, i % 3 === 0 ? 520 : 360)"
+        alt="Inspiração"
+      />
+    </div>
+  </div>
 </ion-content>

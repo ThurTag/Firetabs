@@ -1,4 +1,37 @@
+<ion-content class="pagina">
+  <div class="topo-grad perfil-topo">
+    <h2 style="text-align: left">Perfil</h2>
+    <div class="quem">
+      <img
+        class="foto"
+        [src]="img('1531746020798-e6953c6e8e04', 200, 200)"
+        alt="Ana"
+      />
+      <strong>Ana Costa</strong>
+      <span class="handle">@ana.costa</span>
+      <p>eu amo moda uhul</p>
+    </div>
+  </div>
 
-<ion-content class="ion-padding">
-  
+  <div class="corpo-pag">
+    <div class="stats">
+      <div *ngFor="let s of stats">
+        <strong>{{ s.n }}</strong><span>{{ s.l }}</span>
+      </div>
+    </div>
+
+    <button class="btn-claro">Editar perfil</button>
+
+    <p class="titulo-sec">Looks favoritos</p>
+    <div class="favs">
+      <div class="fav-card" *ngFor="let l of favoritos">
+        <img [src]="img(l.img, 400, 240)" [alt]="l.nome" />
+        <span>{{ l.nome }}</span>
+      </div>
+    </div>
+
+    <button class="btn-claro">Histórico de looks ›</button>
+    <button class="btn-verde">Doações e Reaproveitamento</button>
+    <button class="btn-premium">Assinar Premium</button>
+  </div>
 </ion-content>

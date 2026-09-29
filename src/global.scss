@@ -24,3 +24,26 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+:root {
+  --ion-font-family: "Outfit", sans-serif;
+}
+
+ion-app,
+ion-tabs,
+ion-router-outlet {
+  height: 100%;
+}
+
+.pagina { --background: #EBE4FF; }
+.topo-grad { background: linear-gradient(to bottom, #7C3AED 0%, #8B5CF6 35%, #A78BFA 65%, #EBE4FF 100%); padding: 48px 20px 44px; }
+.topo-grad h2 { margin: 0; color: #fff; font-size: 22px; font-weight: 700; }
+.topo-linha { display: flex; justify-content: space-between; align-items: center; }
+.btn-topo { background: rgba(255,255,255,.2); color: #fff; border: 1px solid rgba(255,255,255,.35); border-radius: 12px; padding: 6px 12px; font-size: 12px; font-weight: 600; }
+.corpo-pag { padding: 0 20px 24px; margin-top: -20px; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding: 4px 0 12px; }
+.chip { white-space: nowrap; padding: 6px 14px; border-radius: 999px; font-size: 12px; background: #EDE9FE; color: #6B6480; border: 1px solid #DDD6FE; }
+.chip.ativo { background: #7C3AED; color: #fff; border-color: #7C3AED; }
+.btn-roxo { width: 100%; padding: 14px; border: none; border-radius: 16px; color: #fff; font-weight: 600; font-size: 14px; background: linear-gradient(135deg, #7C3AED, #A78BFA); margin-top: 16px; }
+.btn-claro { width: 100%; padding: 12px; border-radius: 16px; font-size: 12px; font-weight: 600; color: #1E1B2E; background: #EDE9FE; border: 1px solid #DDD6FE; margin-top: 10px; }
+.titulo-sec { font-size: 12px; font-weight: 600; color: #6B6480; margin: 16px 0 12px; }

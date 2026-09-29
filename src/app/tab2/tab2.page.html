@@ -1,4 +1,22 @@
+<ion-content class="pagina">
+  <div class="topo-grad">
+    <div class="topo-linha">
+      <h2>Guarda-roupa</h2>
+      <button class="btn-topo" (click)="novaPasta()">+ Nova pasta</button>
+    </div>
+  </div>
 
-<ion-content class="ion-padding">
-  
+  <div class="corpo-pag">
+    <div class="pasta" *ngFor="let p of pastas">
+      <div class="pasta-img" [style.background-image]="'url(' + img(p.img, 800, 400) + ')'">
+        <div class="pasta-grad"></div>
+        <span class="fav" *ngIf="p.fav">Favorito</span>
+        <div class="pasta-txt"><strong>{{ p.nome }}</strong><small>{{ p.desc }}</small></div>
+      </div>
+      <div class="pasta-rod">
+        <div><span class="tag" *ngFor="let t of p.tags">#{{ t }}</span></div>
+        <span class="cont">{{ p.looks }} looks ›</span>
+      </div>
+    </div>
+  </div>
 </ion-content>
